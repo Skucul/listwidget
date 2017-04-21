@@ -116,3 +116,10 @@ class ListHeader(Button):
 
 class ListCell(Label):
     bcolor = ListProperty([1,1,1,1])
+
+#----------------TEST------------------
+if __name__ == "__main__":
+    from kivy.base import runTouchApp 
+    c = List()
+    c.data=[['11','12','13'],['21','22','23'],['31','32','33']]
+    runTouchApp(c)
